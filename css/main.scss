@@ -1,19 +1,26 @@
-//Astracts
-@import url('./abstracts/function');
-@import url('./abstracts/mixin');
-@import url('./abstracts/variables');
-
+//Abstracts
+@import'./abstracts/function';
+@import'./abstracts/mixin';
+@import'./abstracts/variables';
 //Base
-@import url('./base/reset');
-@import url('./base/typeography');
+@import'./base/reset';
+@import'./base/typeography';
 //Components
-@import url('./components/buttons');
-@import url('./components/dropdow');
+@import'./components/buttons';
+@import'./components/dropdown';
+@import'./components/img';
 //Layout
-@import url('./layout/header');
-@import url('./layout/footer');
-@import url('./layout/navigation');
+@import'./layout/footer';
+@import'./layout/header';
+@import'./layout/navigation';
 //Pages
-@import url('./pages/catalog');
-@import url('./pages/home');
-@import url('./pages/shop');
+@import'./pages/catalog';
+@import'./pages/home';
+@import'./pages/shop';
+
+
+
+
+
+
+
