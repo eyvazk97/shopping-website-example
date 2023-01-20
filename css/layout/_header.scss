@@ -78,6 +78,9 @@
             font-size: 14px;
             padding: 0px 8px;
             color: gray;
+            &:hover {
+                color: orangered;
+            }
         }
         
     }
