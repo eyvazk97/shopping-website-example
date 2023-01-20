@@ -1,0 +1,6 @@
+@mixin font ($size, $weight) {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: center;
+}
