@@ -179,7 +179,7 @@
   display: none;
   position: absolute;
   left: -60px;
-  top: 35px;
+  top: 27px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   background-color: rgb(240, 240, 240);
@@ -237,4 +237,193 @@
   line-height: 15px;
   border-radius: 50%;
   color: white;
+}
+
+.billboard {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 35px;
+  padding: 13px;
+  background-image: url("../css/img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.billboard i {
+  color: orangered;
+  font-size: 12px;
+  padding: 0px 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin: 20px 0px;
+  width: 100%;
+  height: 480px;
+  cursor: pointer;
+}
+.main-container .main-women {
+  flex-grow: 1;
+  height: 100%;
+  background-image: url("./img/woman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  filter: grayscale(60%);
+  transition: 0.8s filter;
+}
+.main-container .main-women .text-center {
+  font-family: "Jost";
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 180px;
+  color: white;
+  filter: grayscale(10%);
+}
+.main-container .main-women .main-button {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+}
+.main-container .main-women .main-button a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.main-container .main-women .main-button a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.main-container .main-women:hover i {
+  padding: 0 15px;
+}
+.main-container .main-women:hover {
+  filter: grayscale(0%);
+}
+.main-container .main-women:hover .text-center {
+  filter: grayscale(0%);
+}
+.main-container .main-men {
+  flex-grow: 1;
+  height: 100%;
+  background-image: url("./img/man.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  filter: grayscale(60%);
+  transition: 0.8s filter;
+}
+.main-container .main-men .text-center {
+  font-family: "Jost";
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 180px;
+  color: white;
+  filter: grayscale(10%);
+}
+.main-container .main-men .main-button {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+}
+.main-container .main-men .main-button a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.main-container .main-men .main-button a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.main-container .main-men:hover i {
+  padding: 0 15px;
+}
+.main-container .main-men:hover {
+  filter: grayscale(0%);
+}
+.main-container .main-men:hover .text-center {
+  filter: grayscale(0%);
+}
+.main-container .main-kids {
+  flex-grow: 1;
+  height: 100%;
+  background-image: url("./img/kids.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  filter: grayscale(60%);
+  transition: 0.8s filter;
+}
+.main-container .main-kids .text-center {
+  font-family: "Jost";
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 180px;
+  color: white;
+  filter: grayscale(10%);
+}
+.main-container .main-kids .main-button {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+}
+.main-container .main-kids .main-button a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.main-container .main-kids .main-button a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.main-container .main-kids:hover i {
+  padding: 0 15px;
+}
+.main-container .main-kids:hover {
+  filter: grayscale(0%);
+}
+.main-container .main-kids:hover .text-center {
+  filter: grayscale(0%);
 }/*# sourceMappingURL=main.css.map */

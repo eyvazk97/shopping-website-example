@@ -4,3 +4,10 @@
     font-weight: $weight;
     text-align: center;
 }
+
+@mixin font-2 ($size, $weight) {
+    font-family: 'Jost';
+    font-size: $size;
+    font-weight: $weight;
+    text-align: center;
+}

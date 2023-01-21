@@ -1,8 +1,13 @@
-@mixin flexcenter ($direction, $jcontent) {
+@mixin flexcenter ($direction: null, $jcontent: null) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: $jcontent
+}
+
+@mixin img-value {
+    background-repeat: no-repeat;
+    background-size: cover;
 }

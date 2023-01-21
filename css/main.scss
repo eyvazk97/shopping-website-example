@@ -20,6 +20,170 @@
 
 
 
+.billboard {
+    @include font (15px, 600);
+    margin-top: 35px;
+    padding: 13px;
+    background-image: url('../css/img/cover.jpg');
+    @include img-value;
+    color: white;
+    i {
+        color: orangered;
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+}
+
+.main-container {
+    @include flexcenter ($direction: row);
+    margin: 20px 0px;
+    width: 100%;
+    height: 480px;
+    cursor: pointer;
+    .main-women {
+        flex-grow: 1;
+        height: 100%;
+        background-image: url('./img/woman.jpg');
+        @include img-value;
+        @include flexcenter (column, space-around);
+        filter: grayscale(60%);
+        transition: .8s filter;
+        .text-center {
+            @include font-2 (55px, 700);
+            letter-spacing: 2px;
+            margin-top: 180px;
+            color: white;
+            filter: grayscale(10%);
+        }
+        .main-button {
+            width: 180px;
+            height: 40px;
+            background-color: white;
+            a {
+                margin-left: 20px;
+                line-height: 40px;
+                font-family: 'Jost';
+                font-size: 17px;
+                font-weight: 500;
+                color: black;
+                text-decoration: none;  
+                i {
+                    margin-left: 10px;
+                    transition: .7s padding;
+                    font-size: 15px;
+                }
+            } 
+        }
+        &:hover i {
+            padding: 0 15px;
+        }
+        &:hover {
+            filter: grayscale(0%);
+        }
+        &:hover .text-center {
+            filter: grayscale(0%);
+        }
+
+
+
+    }
+    .main-men {
+        flex-grow: 1;
+        height: 100%;
+        background-image: url('./img/man.jpg');
+        @include img-value;
+        @include flexcenter (column, space-around);
+        filter: grayscale(60%);
+        transition: .8s filter;
+        .text-center {
+            @include font-2 (55px, 700);
+            letter-spacing: 2px;
+            margin-top: 180px;
+            color: white;
+            filter: grayscale(10%);
+        }
+        .main-button {
+            width: 180px;
+            height: 40px;
+            background-color: white;
+            a {
+                margin-left: 20px;
+                line-height: 40px;
+                font-family: 'Jost';
+                font-size: 17px;
+                font-weight: 500;
+                color: black;
+                text-decoration: none;  
+                i {
+                    margin-left: 10px;
+                    transition: .7s padding;
+                    font-size: 15px;
+                }
+            } 
+        }
+        &:hover i {
+            padding: 0 15px;
+        }
+        &:hover {
+            filter: grayscale(0%);
+        }
+        &:hover .text-center {
+            filter: grayscale(0%);
+        }
+    }
+    .main-kids {
+        flex-grow: 1;
+        height: 100%;
+        background-image: url('./img/kids.jpg');
+        @include img-value;
+        @include flexcenter (column, space-around);
+        filter: grayscale(60%);
+        transition: .8s filter;
+        .text-center {
+            @include font-2 (55px, 700);
+            letter-spacing: 2px;
+            margin-top: 180px;
+            color: white;
+            filter: grayscale(10%);
+        }
+        .main-button {
+            width: 180px;
+            height: 40px;
+            background-color: white;
+            a {
+                margin-left: 20px;
+                line-height: 40px;
+                font-family: 'Jost';
+                font-size: 17px;
+                font-weight: 500;
+                color: black;
+                text-decoration: none;  
+                i {
+                    margin-left: 10px;
+                    transition: .7s padding;
+                    font-size: 15px;
+                }
+            } 
+        }
+        &:hover i {
+            padding: 0 15px;
+        }
+        &:hover {
+            filter: grayscale(0%);
+        }
+        &:hover .text-center {
+            filter: grayscale(0%);
+        }
+    }
+
+}
+
+
+
+
+
+
+
 
 
 
