@@ -59,7 +59,6 @@
         }
     }
     .navbar-item {
-        position: relative;
         flex-grow: 1;
         @include flexcenter (row, start);
         i {
@@ -70,17 +69,26 @@
                 color: orangered;
             }
         }
-        .fa-2 {
-            position: absolute;
-            top: -7px;
-            right: 210px;
-            line-height: 5px;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background-color: orangered;
-            font-size: 12px;
-            color: white;
+        .fa-bag-shopping {
+            position: relative;
+            display: block;
+            width: 30px;
+            &::after {
+                content: '2';
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                top: -3px;
+                font-size: 9px;
+                background-color: orangered;
+                text-align: center;
+                line-height: 15px;
+                border-radius: 50%;
+                color: white;
+
+            }
         }
 
     }
