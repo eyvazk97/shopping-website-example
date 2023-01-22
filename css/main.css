@@ -324,6 +324,180 @@
   color: rgb(93, 93, 93);
 }
 
+.collection {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 1100px;
+}
+.collection .collection-content {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.collection .collection-content .content-box-1 {
+  margin-right: 20px;
+  flex-grow: 1;
+  height: 400px;
+  background-color: lightblue;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.collection .collection-content .content-box-1 .texting {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px;
+}
+.collection .collection-content .content-box-1 .shopping {
+  width: 200px;
+  height: 40px;
+}
+.collection .collection-content .content-box-1 .shopping a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.collection .collection-content .content-box-1 .shopping a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.collection .collection-content .content-box-1:hover i {
+  padding-left: 15px;
+}
+.collection .collection-content .content-box-2 {
+  flex-grow: 3;
+  height: 400px;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.collection .collection-content .content-box-2 .texting {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px;
+}
+.collection .collection-content .content-box-2 .shopping {
+  width: 200px;
+  height: 40px;
+}
+.collection .collection-content .content-box-2 .shopping a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.collection .collection-content .content-box-2 .shopping a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.collection .collection-content .content-box-2:hover i {
+  padding-left: 15px;
+}
+.collection .collection-content .content-box-3 {
+  margin-right: 20px;
+  flex-grow: 3;
+  height: 400px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.collection .collection-content .content-box-3 .texting {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  padding: 10px;
+}
+.collection .collection-content .content-box-3 .shopping {
+  width: 200px;
+  height: 40px;
+}
+.collection .collection-content .content-box-3 .shopping a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.collection .collection-content .content-box-3 .shopping a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.collection .collection-content .content-box-3:hover i {
+  padding-left: 15px;
+}
+.collection .collection-content .content-box-4 {
+  flex-grow: 1;
+  height: 400px;
+  width: 135px;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.collection .collection-content .content-box-4 .texting {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px;
+}
+.collection .collection-content .content-box-4 .shopping {
+  width: 200px;
+  height: 40px;
+}
+.collection .collection-content .content-box-4 .shopping a {
+  margin-left: 20px;
+  line-height: 40px;
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.collection .collection-content .content-box-4 .shopping a i {
+  margin-left: 10px;
+  transition: 0.7s padding;
+  font-size: 15px;
+}
+.collection .collection-content .content-box-4:hover i {
+  padding-left: 15px;
+}
+
 .billboard {
   font-family: "Maven Pro", sans-serif;
   font-size: 15px;

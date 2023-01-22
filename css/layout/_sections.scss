@@ -64,5 +64,150 @@
     }
 }
 .collection {
-    
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 1100px;
+    .collection-content {
+        margin-top: 70px;
+        @include flexcenter (row, center);
+        .content-box-1 {
+            margin-right: 20px;
+            flex-grow: 1;
+            height: 400px;
+            background-color: lightblue;
+            width: 150px;
+            @include flexcenter (column, center);
+            .texting {
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+                padding: 10px;
+            }
+            .shopping {
+                width: 200px;
+                height: 40px;
+                a {
+                    margin-left: 20px;
+                    line-height: 40px;
+                    font-family: 'Jost';
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: white;
+                    text-decoration: none;
+                    i {
+                        margin-left: 10px;
+                        transition: .7s padding;
+                        font-size: 15px;
+                    }
+                }
+            }
+            &:hover i{
+                padding-left: 15px;
+            }
+        }
+        .content-box-2 {
+            flex-grow: 3;
+            height: 400px;
+            background-color: lightcoral;
+            @include flexcenter (column, center);
+            .texting {
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+                padding: 10px;
+            }
+            .shopping {
+                width: 200px;
+                height: 40px;
+                a {
+                    margin-left: 20px;
+                    line-height: 40px;
+                    font-family: 'Jost';
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: white;
+                    text-decoration: none;
+                    i {
+                        margin-left: 10px;
+                        transition: .7s padding;
+                        font-size: 15px;
+                    }
+                }
+            }
+            &:hover i{
+                padding-left: 15px;
+            }
+        }
+        .content-box-3 {
+            margin-right: 20px;
+            flex-grow: 3;
+            height: 400px;
+            background-color: lightgreen;
+            @include flexcenter (column, center);
+            align-content: flex-start;
+            align-items: flex-start;
+            .texting {
+                font-size: 30px;
+                font-weight: 500;
+                color: black;
+                padding: 10px;
+            }
+            .shopping {
+                width: 200px;
+                height: 40px;
+                a {
+                    margin-left: 20px;
+                    line-height: 40px;
+                    font-family: 'Jost';
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: black;
+                    text-decoration: none;
+                    i {
+                        margin-left: 10px;
+                        transition: .7s padding;
+                        font-size: 15px;
+                    }
+                }
+            }
+            &:hover i{
+                padding-left: 15px;
+            }
+        }
+        .content-box-4 {
+            flex-grow: 1;
+            height: 400px;
+            width: 135px;
+            background-color: lightsalmon;
+            @include flexcenter (column, center);            .texting {
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+                padding: 10px;
+            }
+            .shopping {
+                width: 200px;
+                height: 40px;
+                a {
+                    margin-left: 20px;
+                    line-height: 40px;
+                    font-family: 'Jost';
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: white;
+                    text-decoration: none;
+                    i {
+                        margin-left: 10px;
+                        transition: .7s padding;
+                        font-size: 15px;
+                    }
+                }
+            }
+            &:hover i{
+                padding-left: 15px;
+            }
+        }
+    }
 }
+
