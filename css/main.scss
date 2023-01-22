@@ -180,6 +180,21 @@
 }
 
 
+.box {
+    display: flex;
+    width: 600px;
+    background-color: lightblue;
+    .left {
+        width: gridsystem(5, 10);
+        background-color: aquamarine;
+    }
+    .right {
+        width: gridsystem(5, 10);
+        background-color: burlywood;
+    }
+}
+
+
 
 
 
