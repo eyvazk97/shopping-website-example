@@ -591,34 +591,117 @@
   border-bottom: 1px solid orangered;
 }
 
-.products-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-.products-container .items-a {
-  width: 100%;
+.products__first-line {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-wrap: nowrap;
+  margin: 30px;
 }
-.products-container .items-a .products {
-  margin: 10px 20px;
-  flex-basis: 16%;
-  height: 500px;
+.products__first-line__card {
+  padding: 10px;
 }
-.products-container .items-a .products .img {
-  height: 300px;
-  background-color: lightblue;
-  background-image: url("../img/product-120.jpg");
+.products__first-line__card div {
+  margin: 5px;
+}
+.products__first-line__card__image {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  background-image: url("./img/product-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  transition: 0.5s background-image;
+}
+.products__first-line__card__image__new {
+  position: absolute;
+  left: -5px;
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 200;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: white;
+}
+.products__first-line__card__image__adding {
+  position: absolute;
+  display: flex;
+  width: 250px;
+  bottom: -10px;
+  text-align: center;
+}
+.products__first-line__card__image__adding div {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 40px;
+}
+.products__first-line__card__image__adding div:hover {
+  background-color: #ff6f61;
+}
+.products__first-line__card__image__adding div:hover a {
+  color: white;
+}
+.products__first-line__card__image__adding div a {
+  text-decoration: none;
+  color: black;
+}
+.products__first-line__card__image__adding div i {
+  font-size: 14px;
+}
+.products__first-line__card__image__adding .icon-1 {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  opacity: 0;
+  transition: 0.1s all;
+}
+.products__first-line__card__image__adding .icon-2 {
+  position: absolute;
+  bottom: 0;
+  left: 115px;
+  opacity: 0;
+  transition: 0.4s all;
+}
+.products__first-line__card__image__adding .icon-3 {
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+  opacity: 0;
+  transition: 0.7s all;
+}
+.products__first-line__card__image:hover {
+  background-image: url("./img/product-120.jpg");
+}
+.products__first-line__card__image:hover .custom-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  opacity: 1;
+  bottom: 12px;
+}
+.products__first-line__card__shoes {
+  color: gray;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.products__first-line__card__text {
+  font-weight: 500;
+}
+.products__first-line__card__cost {
+  font-weight: 600;
+  color: gray;
 }
 
 .billboard {

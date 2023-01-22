@@ -1,5 +1,6 @@
 @import'../abstracts/mixin';
 @import'../base/typeography';
+@import'../abstracts/function';
 
 
 .bottom-main {
@@ -282,24 +283,114 @@
         }
     }
 }
-.products-container {
-    @include flexcenter (column, center);
-    .items-a {
-        width: 100%;
+
+
+
+.products {
+    &__first-line {
         @include flexcenter (row, center);
-        .products {
-            margin: 10px 20px;
-            flex-basis: 16%;
-            height: 500px;
-            .img {
-                height: 300px;
-                background-color: lightblue;
-                background-image: url('../img/product-120.jpg');
+        flex-wrap: nowrap;
+        margin: 30px;
+        &__card {
+            padding: 10px;
+            div {
+                margin: 5px;
+            }
+            &__image {
+                position: relative;
+                width: 280px;
+                height: 320px;
+                background-image: url('./img/product-5.jpg');
                 @include img-value;
+                cursor: pointer;
+                transition: .5s background-image;
+                &__new {
+                    position: absolute;
+                    left: -5px;
+                    @include font-2 (13px, 200);
+                    width: 50px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    background-color: white;
+                }
+                &__adding {
+                    position: absolute;
+                    display: flex;
+                    width: 250px;
+                    bottom: -10px;
+                    text-align: center;
+                    div {
+                        height: 40px;
+                        width: 40px;
+                        background-color: white;
+                        border-radius: 50%;
+                        line-height: 40px;
+                        &:hover {
+                            background-color: #ff6f61;
+                        }
+                        &:hover a {
+                            color: white;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        i{
+                            font-size: 14px;
+                        }
+                    }
+                    .icon-1 {
+                        position: absolute;
+                        bottom: 0;
+                        left: 70px;
+                        opacity: 0;
+                        transition: .1s all;
+                    }
+                    .icon-2 {
+                        position: absolute;
+                        bottom: 0;
+                        left: 115px;
+                        opacity: 0;
+                        transition: .4s all;
+                    }
+                    .icon-3 {
+                        position: absolute;
+                        bottom: 0;
+                        left: 160px;
+                        opacity: 0;
+                        transition: .7s all;
+                    }
+                }
+                &:hover {
+                    background-image: url('./img/product-120.jpg');
+                }
+                &:hover .custom-icon {
+                    @include flexcenter (row, center);
+                    opacity: 1;
+                    bottom: 12px;
+                }
+                // &:hover .custom-adding {
+                //     opacity: 1;
+                //     @include flexcenter (row, center);
+                // }
+
+            }
+            &__shoes {
+                color: gray;
+                font-size: 14px;
+                padding-top: 10px;
+            }
+            &__text {
+                font-weight: 500;
+            }
+            &__cost {
+                font-weight: 600;
+                color: gray;
             }
         }
+        
     }
-
 }
 
 
