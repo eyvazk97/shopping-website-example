@@ -1,0 +1,68 @@
+@import'../abstracts/mixin';
+@import'../base/typeography';
+
+
+.bottom-main {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    @include flexcenter (row, space-evenly);
+    @include font-2 (15px, 400);
+    &::after {
+        content: '';
+        border-bottom: 1px solid rgb(186, 186, 186);
+        border-width: thin;
+        width: 1300px;
+        margin-top: 20px;
+    }
+    .bottom-box {
+        @include flexcenter (row, space-evenly);
+        align-items: flex-start;
+        .bottom-icon {
+            i {
+                color: orangered;
+            }
+        }
+        .bottom-text {
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: baseline;
+            @include font-2 (14px, 300);
+            line-height: 10px;
+            .text-p-2 {
+                color: rgba(167, 167, 167, 0.912);
+                font-size: 14px;
+                font-weight: 200;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+.section-text {
+    width: 100%;
+    .text-container {
+        padding-top: 120px;
+        margin: auto;
+        width: 500px;
+        text-align: center;
+        .text-p-1 {
+            @include font-2 (14px, 500);
+            color: gray;
+        }
+        .text-p-2 {
+            @include font-2 (37px, 500);
+            line-height: 30px;
+        }
+        .text-p-3 {
+            @include font-2 (15px, 200);
+            margin-top: 30px;
+            color: rgb(93, 93, 93);
+
+        }
+    }
+}
+.collection {
+    
+}

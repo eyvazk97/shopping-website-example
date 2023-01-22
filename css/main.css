@@ -239,6 +239,91 @@
   color: white;
 }
 
+.bottom-main {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  font-family: "Jost";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.bottom-main::after {
+  content: "";
+  border-bottom: 1px solid rgb(186, 186, 186);
+  border-width: thin;
+  width: 1300px;
+  margin-top: 20px;
+}
+.bottom-main .bottom-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.bottom-main .bottom-box .bottom-icon i {
+  color: orangered;
+}
+.bottom-main .bottom-box .bottom-text {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 10px;
+}
+.bottom-main .bottom-box .bottom-text .text-p-2 {
+  color: rgba(167, 167, 167, 0.912);
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  width: 100%;
+}
+.section-text .text-container {
+  padding-top: 120px;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+.section-text .text-container .text-p-1 {
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: gray;
+}
+.section-text .text-container .text-p-2 {
+  font-family: "Jost";
+  font-size: 37px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+}
+.section-text .text-container .text-p-3 {
+  font-family: "Jost";
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(93, 93, 93);
+}
+
 .billboard {
   font-family: "Maven Pro", sans-serif;
   font-size: 15px;
