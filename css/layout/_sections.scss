@@ -67,7 +67,7 @@
 .collection {
     position: relative;
     margin: auto;
-    width: 1150px;
+    width: 1100px;
     .collection-content {
         margin-top: 70px;
         @include flexcenter (row, center);
@@ -177,7 +177,7 @@
             flex-grow: 3;
             height: 400px;
             background-image: url('./img/product-3.jpg');
-            background-position: 10%;
+            background-position: 0%;
             transition: .7s background-position;
             @include img-value;
             @include flexcenter (column, center);
@@ -213,7 +213,7 @@
                 padding-left: 15px;
             }
             &:hover {
-                background-position: 60%;
+                background-position: 100%;
             }
         }
         .content-box-4 {
