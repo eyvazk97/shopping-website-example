@@ -11,3 +11,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin icon-value ($left) {
+    position: absolute;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    left: $left;
+    opacity: 0;
+}

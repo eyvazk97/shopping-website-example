@@ -283,113 +283,120 @@
         }
     }
 }
-
-
-
 .products {
     &__first-line {
         @include flexcenter (row, center);
         flex-wrap: nowrap;
-        margin: 30px;
         &__card {
-            padding: 10px;
-            div {
-                margin: 5px;
-            }
-            &__image {
-                position: relative;
-                width: 280px;
-                height: 320px;
-                background-image: url('./img/product-5.jpg');
-                @include img-value;
-                cursor: pointer;
-                transition: .5s background-image;
-                &__new {
-                    position: absolute;
-                    left: -5px;
-                    @include font-2 (13px, 200);
-                    width: 50px;
-                    height: 30px;
-                    text-align: center;
-                    line-height: 30px;
-                    background-color: white;
+            margin: 20px 18px;
+            @include flexcenter (column, center);
+            &__text {
+                margin-top: 30px;
+                margin-right: 75px;
+                &__shoes {
+                    a {
+                        text-decoration: none;
+                        color: gray;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
                 }
-                &__adding {
-                    position: absolute;
-                    display: flex;
-                    width: 250px;
-                    bottom: -10px;
-                    text-align: center;
-                    div {
-                        height: 40px;
-                        width: 40px;
-                        background-color: white;
-                        border-radius: 50%;
-                        line-height: 40px;
-                        &:hover {
-                            background-color: #ff6f61;
-                        }
-                        &:hover a {
-                            color: white;
-                        }
-                        a{
-                            text-decoration: none;
-                            color: black;
-                        }
-                        i{
-                            font-size: 14px;
-                        }
+                &__info {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 500;
                     }
-                    .icon-1 {
+                }
+                &__cost {
+                    color: gray;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                }
+            }
+            &__card-1 {
+                &__image {
+                    position: relative;
+                    width: 260px;
+                    height: 290px;
+                    background-color: #ff6f61;
+                    cursor: pointer;
+                    &__example-1 {
                         position: absolute;
-                        bottom: 0;
-                        left: 70px;
-                        opacity: 0;
-                        transition: .1s all;
-                    }
-                    .icon-2 {
-                        position: absolute;
-                        bottom: 0;
-                        left: 115px;
-                        opacity: 0;
-                        transition: .4s all;
-                    }
-                    .icon-3 {
-                        position: absolute;
-                        bottom: 0;
-                        left: 160px;
-                        opacity: 0;
+                        width: 100%;
+                        z-index: 1;
+                        opacity: 1;
                         transition: .7s all;
                     }
+                    &__example-2 {
+                        position: absolute;
+                        width: 100%;
+                        z-index: 0;
+                    }
+                    &__new {
+                        position: absolute;
+                        z-index: 1;
+                        margin-top: 15px;
+                        margin-left: 0px;
+                        width: 50px;
+                        height: 30px;
+                        background-color: white;
+                        @include font (13px, 600);
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                    &__adding {
+                        position: relative;
+                        width: 100%;
+                        z-index: 1;
+                        @include flexcenter (row, center);
+                        top: 300px;
+                        .icon-1 {
+                            @include icon-value (80px);
+                            transition: 0.1s all;
+                            a {
+                                text-decoration: none;
+                                color: black
+                            }
+                        }
+                        .icon-2 {
+                            @include icon-value (125px);
+                            transition: 0.25s all;
+                            a {
+                                text-decoration: none;
+                                color: black
+                            }
+                        }
+                        .icon-3 {
+                            @include icon-value (170px);
+                            transition: 0.4s all;
+                            a {
+                                text-decoration: none;
+                                color: black
+                            }
+                        }
+                        .custom-icon {
+                            &:hover {
+                                background-color: #ff6f61;
+                            }
+                            &:hover a{
+                                color: white;
+                            }
+                        }
+                        
+                    }
+                    &:hover .products__first-line__card__card-1__image__example-1 {
+                        opacity: 0;
+                    }
+                    &:hover .custom-icon {
+                        margin-bottom: 40px;
+                        opacity: 1;
+                    }
                 }
-                &:hover {
-                    background-image: url('./img/product-120.jpg');
-                }
-                &:hover .custom-icon {
-                    @include flexcenter (row, center);
-                    opacity: 1;
-                    bottom: 12px;
-                }
-                // &:hover .custom-adding {
-                //     opacity: 1;
-                //     @include flexcenter (row, center);
-                // }
-
-            }
-            &__shoes {
-                color: gray;
-                font-size: 14px;
-                padding-top: 10px;
-            }
-            &__text {
-                font-weight: 500;
-            }
-            &__cost {
-                font-weight: 600;
-                color: gray;
             }
         }
-        
     }
 }
 
