@@ -489,6 +489,83 @@
     
 }
 
+.brends {
+    width: 100%;
+    height: 650px;
+    background-color: #f5f5f5;
+    margin-top: 200px;
+    @include flexcenter (column, center);
+    &__text {
+        text-align: center;
+        h2 {
+            @include font-2 (38px, 500)
+        }
+        p {
+            @include font-2 (17px, thin);
+            color: gray;
+        }
+    }
+    &__images{
+        margin-top: 40px;
+        width: 78%;
+        @include flexcenter (row, space-evenly);
+        &__items {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            img {
+                position: absolute;
+                height: 180px;
+                width: 180px;   
+            }
+            &__back-image {
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                background-color: black;
+                opacity: 0;
+                transition: 0.2s opacity;
+            }
+            &__icons {
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                margin-top: 80px;
+                color: white;
+                opacity: 0;
+                transition: 0.2s opacity;
+                @include font-2 (14px, 300);
+                i {
+                    padding: 0 15px;
+                }
+            }
+            &:hover .brends__images__items__back-image {
+                opacity: 0.4;
+            }
+            &:hover .brends__images__items__icons {
+                opacity: 1;
+            }
+
+
+        }
+    }
+    &__logo {
+        margin-top: 30px;
+        width: 75%;
+        @include flexcenter (row, space-evenly);
+        &__items {
+            width: 150px;
+            text-align: center;
+            margin-top: 50px;
+            img {
+                width: 150px;
+                filter: grayscale(100%);
+            }
+        }
+    }
+}
+
 
 
 

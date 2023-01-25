@@ -866,6 +866,105 @@
   padding: 0 10px;
 }
 
+.brends {
+  width: 100%;
+  height: 650px;
+  background-color: #f5f5f5;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.brends__text {
+  text-align: center;
+}
+.brends__text h2 {
+  font-family: "Jost";
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+}
+.brends__text p {
+  font-family: "Jost";
+  font-size: 17px;
+  font-weight: thin;
+  text-align: center;
+  color: gray;
+}
+.brends__images {
+  margin-top: 40px;
+  width: 78%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.brends__images__items {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: lightblue;
+}
+.brends__images__items img {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+}
+.brends__images__items__back-image {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: black;
+  opacity: 0;
+  transition: 0.2s opacity;
+}
+.brends__images__items__icons {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  margin-top: 80px;
+  color: white;
+  opacity: 0;
+  transition: 0.2s opacity;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+.brends__images__items__icons i {
+  padding: 0 15px;
+}
+.brends__images__items:hover .brends__images__items__back-image {
+  opacity: 0.4;
+}
+.brends__images__items:hover .brends__images__items__icons {
+  opacity: 1;
+}
+.brends__logo {
+  margin-top: 30px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.brends__logo__items {
+  width: 150px;
+  text-align: center;
+  margin-top: 50px;
+}
+.brends__logo__items img {
+  width: 150px;
+  filter: grayscale(100%);
+}
+
 .billboard {
   font-family: "Maven Pro", sans-serif;
   font-size: 15px;
