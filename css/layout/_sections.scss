@@ -405,7 +405,7 @@
         text-align: center;
         margin-top: 80px;
         cursor: pointer;
-        @include font-2 (15px, 400);
+        @include font-2 (16px, 400);
         &::after {
             width: 100%;
             display:block;
@@ -416,9 +416,79 @@
             transform-origin: 0% 50%;
         }
         &:hover:after{ transform: scaleX(0); transform-origin:   100% 50%; }
-
     }
 }
+.campaign-board {
+    @include flexcenter (column, space-evenly);
+    margin-top: 100px;
+    width: 100%;
+    height: 550px;
+    background-image: url('./img/cover-4.jpg');
+    @include img-value;
+    background-position-y: 50%;
+    &__main-area {
+        width: 40%;
+        height: 60%;
+        margin-left: 650px;
+        @include flexcenter (column, space-evenly);
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        h3{
+            width: 300px;
+            @include font-2 (32px, 500);
+            text-align: start;
+        }
+        &__time {
+            width: 100%;
+            @include flexcenter (row, flex-start);
+            align-items: baseline;
+            &__double-point {
+                font-size: 50px;
+                font-weight: 600;
+                margin: 0 10px;
+                color: #ff6f61;
+            }
+            &__date {
+                @include flexcenter (column, center);
+                &__number {
+                    @include font-2 (40px, 600);
+                    color: #ff6f61
+                }
+                &__text {
+                    @include font-2 (15px, 300);
+                    color: #767676;
+                }
+            }
+
+        }
+        &__main-button {
+            width: 160px;
+            height: 60px;
+            line-height: 60px;
+            background-color: black;
+            a {
+                margin-left: 30px;
+                line-height: 40px;
+                font-family: 'Jost';
+                font-size: 17px;
+                font-weight: 500;
+                color: white;
+                text-decoration: none;  
+                i {
+                    margin-left: 10px;
+                    transition: .7s padding;
+                    font-size: 15px;
+                }
+            }
+            &:hover i {
+                padding: 0 10px;
+            }
+        }
+    }
+    
+}
+
 
 
 
