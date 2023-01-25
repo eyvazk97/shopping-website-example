@@ -741,6 +741,31 @@
   margin-bottom: 40px;
   opacity: 1;
 }
+.products__discover {
+  position: relative;
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  margin-top: 80px;
+  cursor: pointer;
+  font-family: "Jost";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.products__discover::after {
+  width: 100%;
+  display: block;
+  content: "";
+  border-bottom: solid 1px black;
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.products__discover:hover:after {
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+}
 
 .billboard {
   font-family: "Maven Pro", sans-serif;

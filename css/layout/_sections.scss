@@ -398,6 +398,26 @@
             }
         }
     }
+    &__discover {
+        position: relative;
+        margin: auto;
+        width: 150px;
+        text-align: center;
+        margin-top: 80px;
+        cursor: pointer;
+        @include font-2 (15px, 400);
+        &::after {
+            width: 100%;
+            display:block;
+            content: '';
+            border-bottom: solid 1px black;  
+            transform: scaleX(1);  
+            transition: transform 250ms ease-in-out;
+            transform-origin: 0% 50%;
+        }
+        &:hover:after{ transform: scaleX(0); transform-origin:   100% 50%; }
+
+    }
 }
 
 
