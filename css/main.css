@@ -1,3 +1,133 @@
+.foot {
+  background-image: url("./img/pattern.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 600px;
+  width: 100%;
+}
+.foot__up__container__text {
+  padding: 100px 50px;
+  margin: 0 400px;
+}
+.foot__up__container__text p {
+  font-family: "Jost";
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.foot__up__container__text__input input {
+  width: 400px;
+  margin: 0 30px;
+  padding: 15px 30px;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  border: none;
+}
+.foot__up__container__text__input ::-moz-placeholder {
+  color: rgb(175, 175, 175);
+}
+.foot__up__container__text__input ::placeholder {
+  color: rgb(175, 175, 175);
+}
+.foot__up__container__text__input button {
+  padding: 15px;
+  width: 130px;
+  background-color: gray;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+.foot__up__container__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: end;
+  align-items: flex-start;
+}
+.foot__up__container__list__first {
+  flex-grow: 1;
+  text-align: center;
+}
+.foot__up__container__list__first span {
+  color: white;
+  font-family: "Jost";
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.foot__up__container__list__first__social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.foot__up__container__list__first__social div {
+  padding: 5px;
+}
+.foot__up__container__list__first__social div a {
+  color: rgb(149, 149, 149);
+  transition: 0.5s all;
+}
+.foot__up__container__list__first__social div:hover a {
+  color: rgb(96, 96, 96);
+}
+.foot__up__container__list__second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 3;
+}
+.foot__up__container__list__second div {
+  padding: 0 30px;
+}
+.foot__up__container__list__second div span {
+  color: white;
+  margin-left: 30px;
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+.foot__up__container__list__second div ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.foot__up__container__list__second div ul li a {
+  text-decoration: none;
+  color: #A6A6A6;
+}
+.foot__down hr {
+  color: white;
+}
+.foot__down__end {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.foot__down__end__left {
+  margin: 10px 150px;
+  color: #A6A6A6;
+  font-size: 13px;
+}
+.foot__down__end__right {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -870,7 +1000,7 @@
   width: 100%;
   height: 650px;
   background-color: #f5f5f5;
-  margin-top: 200px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
